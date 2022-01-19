@@ -53,5 +53,5 @@ jspm_packages
 # 自定义部分
 .vscode
 lib/
-docs/.vuepress/dist/
+# docs/.vuepress/dist/ 在线文档
 types/

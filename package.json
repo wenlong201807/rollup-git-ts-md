@@ -11,9 +11,11 @@
     "url": "https://github.com/wenlong201807/rollup-git-ts-md.git"
   },
   "files": [
-    "src",
     "types",
-    "lib"
+    "lib",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "test": "jest",
