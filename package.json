@@ -1,6 +1,6 @@
 {
   "name": "rollup-ts-num",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "get a number",
   "main": "lib/bundle.cjs.js",
   "module": "lib/bundle.esm.js",
