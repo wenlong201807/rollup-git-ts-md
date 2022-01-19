@@ -6,6 +6,10 @@
   "module": "lib/bundle.esm.js",
   "browser": "lib/bundle.browser.js",
   "types": "types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wenlong201807/rollup-git-ts-md.git"
+  },
   "files": [
     "src",
     "types",
