@@ -16,6 +16,7 @@ module.exports = {
       ],
       '/api/': [
           'show-num',
+          'day',
       ],
       '/changelog/': ['']
     }
