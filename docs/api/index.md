@@ -2,5 +2,5 @@
 
 **使用方法**
 
-- [ShowNum](/dragon/api/show-num)
-- [Day](/dragon/api/day)
+- [ShowNum](/rollup-git-ts-md/api/show-num)
+- [Day](/rollup-git-ts-md/api/day)

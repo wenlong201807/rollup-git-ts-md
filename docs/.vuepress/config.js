@@ -1,7 +1,7 @@
 module.exports = {
   title: '@Dragon',
   description: 'Just playing here',
-  base: '/dragon/',
+  base: '/rollup-git-ts-md/',
   themeConfig: {
     logo: '/logo.png',
     nav: [

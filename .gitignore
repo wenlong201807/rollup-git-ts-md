@@ -55,3 +55,6 @@ jspm_packages
 lib/
 # docs/.vuepress/dist/ 在线文档
 types/
+# vuePress
+docs-pages
+docs-pages.pub
