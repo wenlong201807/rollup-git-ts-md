@@ -16,3 +16,4 @@ console.log(ShowNum(7.7))
 # docs文档[待完善]
 
 - [参考资料](https://www.cnblogs.com/LHLVS/p/11376732.html)
+- [changeLog](https://blog.csdn.net/weixin_34326179/article/details/91382865)
