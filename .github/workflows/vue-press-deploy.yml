@@ -30,5 +30,6 @@ jobs:
           SSH: true # SSH must be set to true so the deploy action knows which protocol to deploy with.
           # ssh-keygen -t rsa -b 4096 -C "$(git config user.email)" -f docs-pages -N ""
           # https://wenlong201807.github.io/rollup-git-ts-md
+          # 建站说明 https://docs.github.com/en/pages
 
 # 参考学习 https://zhuanlan.zhihu.com/p/258895977
