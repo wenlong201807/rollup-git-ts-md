@@ -40,11 +40,28 @@ jobs:
           npm run build:types
           npm run docs:build
           npm publish --access public
-      - name: deploy                          # 发布文档
-        if: ${{contains(github.ref, 'refs/tags/')}}
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+      #- name: deploy                          # 发布文档
+      #  if: ${{contains(github.ref, 'refs/tags/')}}
+      #  uses: JamesIves/github-pages-deploy-action@4.1.1
+      #  with:
+      #    branch: main # The branch the action should deploy to.
+      #    folder: docs/.vuepress/dist # The folder the action should deploy.
+
+      - name: Install SSH Client
+        uses: webfactory/ssh-agent@v0.2.0 # This step installs the ssh client into the workflow run. There's many options available for this on the action marketplace.
         with:
-          branch: main # The branch the action should deploy to.
-          folder: docs/.vuepress/dist # The folder the action should deploy.
-          SSH: true # SSH must be set to true so the deploy action knows which protocol to deploy with.
-        
+          ssh-private-key: ${{ secrets.DEPLOY_KEY }}
+
+      - name: Build and Deploy Repo
+        uses: JamesIves/github-pages-deploy-action@releases/v3-test
+        with:
+          branch: main
+          # BASE_BRANCH: mian
+          # BRANCH: docs-pages
+          folder: docs/.vuepress/dist
+          ssh: true # SSH must be set to true so the deploy action knows which protocol to deploy with.
+          # ssh-keygen -t rsa -b 4096 -C "$(git config user.email)" -f docs-pages -N ""
+          # https://wenlong201807.github.io/rollup-git-ts-md
+          # 建站说明 https://docs.github.com/en/pages
+
+# 参考学习 https://zhuanlan.zhihu.com/p/258895977  
